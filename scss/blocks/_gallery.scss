@@ -1,0 +1,55 @@
+@use 'design-system' as *;
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.gallery__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+a.gallery__see-more-link {
+    @extend %h4;
+    color: $brown;
+}
+
+.gallery__content {
+    display: grid;
+    grid-template-rows: repeat(3,186px);
+    grid-template-areas: "A A A A A A A A A B B B B B B B"
+                         "A A A A A A A A A C C C D D D D"
+                         "A A A A A A A A A C C C E E E E";
+    gap: 20px;
+}
+
+.gallery-card:nth-child(1) {
+    grid-area: A;
+}
+.gallery-card:nth-child(2) {
+    grid-area: B;
+}
+.gallery-card:nth-child(3) {
+    grid-area: C;
+}
+.gallery-card:nth-child(4) {
+    grid-area: D;
+}
+.gallery-card:nth-child(5) {
+    grid-area: E;
+}
+
+.gallery-card {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

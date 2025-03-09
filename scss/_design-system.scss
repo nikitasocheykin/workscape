@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: #FFF;
+$brown: #807166;
+$gray: #F4F4F4;
+$black: #222;
+$cream: #F4F1E8;
+$black10: #CACACA;
+
+$fontFamilyHeadline: 'Raleway', sans-serif;
+$fontFamilyParagraph: 'Montserrat', sans-serif;
+
+%h1 {
+    font-family: $fontFamilyHeadline;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 88px;
+    color: $black;
+}
+
+%h2 {
+    font-family: $fontFamilyHeadline;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    color: $black;
+}
+
+%h3 {
+    font-family: $fontFamilyHeadline;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    color: $black;
+}
+
+%h4 {
+    font-family: $fontFamilyParagraph;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: $black;
+}
+
+%h5 {
+    font-family: $fontFamilyParagraph;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $black;
+}
+
+h1 {
+    @extend %h1;
+}
+
+h2 {
+    @extend %h2;
+}
+
+h3 {
+    @extend %h3;
+}
+
+h4 {
+    @extend %h4;
+}
+
+h5 {
+    @extend %h5;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: $black;
+}
+
+.btn, .btn:visited, .btn:active {
+    @extend %h4;
+    display: flex;
+    padding: 8px 32px;
+    border-radius: 50px;
+    background: $black;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+
+    transition: 200ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: $brown;
+}

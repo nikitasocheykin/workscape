@@ -1,0 +1,12 @@
+@use "reset";
+@use "design-system";
+@use "blocks";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1340px;
+    padding-inline: 16px;
+    margin: 0 auto;
+}

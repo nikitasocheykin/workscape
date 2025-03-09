@@ -1,0 +1,17 @@
+.brands {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.brands__headline {
+    text-align: center;
+}
+
+.brands__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}

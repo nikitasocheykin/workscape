@@ -1,0 +1,53 @@
+@use 'design-system' as *;
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 64px;
+    background-color: $cream;
+    border-radius: 20px;
+}
+
+.values__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a.values__see-more-link {
+    @extend %h4;
+    color: $brown;
+}
+
+.values__elements {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.value-card {
+    display: flex;
+    max-width: 395px;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 20px;
+    border: 1px solid $black10;
+}
+
+.value-card__img {
+    width: 24px;
+    height: 24px;
+}
+
+.value-card__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.value-card__desc {
+    height: 72px;
+}
