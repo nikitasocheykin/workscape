@@ -4,6 +4,11 @@ header {
     position: sticky;
     top: 0;
     background-color: $white;
+    z-index: 1000;
+}
+
+.header__mobile-logo {
+    display: none;
 }
 
 .header__wrapper {

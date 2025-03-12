@@ -15,6 +15,8 @@
 a.gallery__see-more-link {
     @extend %h4;
     color: $brown;
+
+    @include bottomBorderedLink($black);
 }
 
 .gallery__content {
@@ -52,4 +54,10 @@ a.gallery__see-more-link {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: 200ms ease-in;
+}
+
+.gallery-card__img:hover {
+    transform: scale(1.1);
 }

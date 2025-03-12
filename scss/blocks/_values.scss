@@ -35,11 +35,15 @@ a.values__see-more-link {
     gap: 24px;
     border-radius: 20px;
     border: 1px solid $black10;
+
+    transition: 200ms ease-in;
 }
 
 .value-card__img {
     width: 24px;
     height: 24px;
+    filter: invert(0);
+    transition: 100ms ease-in;
 }
 
 .value-card__texts {
@@ -50,4 +54,23 @@ a.values__see-more-link {
 
 .value-card__desc {
     height: 72px;
+}
+
+.value-card:hover {
+    background-color: $brown;
+    transform: scale(1.1) rotate(5deg);
+
+    .value-card__img {
+        filter: invert(1);
+    }
+    .value-card__headline {
+        color: $white;
+    }
+    .value-card__desc {
+        color: $white;
+    }
+}
+
+a.values__see-more-link {
+    @include bottomBorderedLink($black);
 }

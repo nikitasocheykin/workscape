@@ -16,6 +16,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    cursor: pointer;
 }
 
 .facilities-card__img {
@@ -41,6 +43,9 @@
     border-radius: 50px;
     background: $black;
     margin-bottom: 8px;
+
+    transition: 200ms ease-in;
+    cursor: pointer;
 }
 
 .facilities-card--primary {
@@ -57,4 +62,11 @@
         max-width: 245px;
         color: $white;
     }
+
+    cursor: default;
+}
+
+.facilities-card__arrow:hover {
+    transform: scale(1.1);
+    background-color: $brown;
 }

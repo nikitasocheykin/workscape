@@ -55,6 +55,31 @@ $fontFamilyParagraph: 'Montserrat', sans-serif;
     color: $black;
 }
 
+@mixin bottomBorderedLink($color, $px: 2px) {
+    display: inline-block;
+    width: fit-content;
+
+    &::after {
+        display: block;
+        content: "";
+        height: $px;
+        width: 0;
+        background-color: $color;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        transition: 200ms ease-in;
+    }
+
+    &:hover {
+        color: $color;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
 h1 {
     @extend %h1;
 }

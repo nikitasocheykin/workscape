@@ -1,0 +1,170 @@
+@media screen and (max-width: 1143px) {
+    .footer__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .facilities__content {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 982px) {
+    .values {
+        flex-direction: column;
+        padding: 32px;
+    }
+    .values__texts {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .gallery__content {
+        grid-template-rows: repeat(4, 186px);
+        grid-template-areas: "A A A A B B B B"
+                             "A A A A B B B B"
+                             "A A A A C C C C"
+                             "D D D D E E E E";
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .facilities__content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .facilities-card--primary {
+        flex-grow: 1;
+        height: 592px;
+    }
+}
+
+@media screen and (max-width: 693px) {
+    .values__texts {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .gallery__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .values__elements {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .value-card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .gallery__content {
+        grid-template-rows: 362px;
+        grid-template-areas: "A" "B" "C" "D" "E";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .header__login {
+        display: none;
+    }
+    .footer__content {
+        background-image: none;
+        height: auto;
+        padding: 0;
+        gap: 16px;
+    }
+    .footer__icon {
+        position: static;
+        filter: invert(1);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1, h2, h3, h4, h5 {
+        line-height: normal;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+    
+    h2 {
+        font-size: 48px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+    
+    h5 {
+        font-size: 16px;
+    }
+
+    .cover {
+        height: auto;
+        background-image: none;
+    }
+
+    .cover__headline {
+        font-size: 15vw;
+        line-height: normal;
+    }
+
+    .contact-item__link {
+        font-size: 12px;
+    }
+
+    .values {
+        padding: 24px;
+    }
+
+    .value-card__desc {
+        height: auto;
+    }
+
+    main.wrapper {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .footer__nav {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .facilities-card__desc {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .contact-item {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__mobile-logo {
+        display: block;
+        height: 24px;
+    }
+
+    .contact-item > * {
+        text-align: left;
+    }
+}
